@@ -1,0 +1,31 @@
+{
+  "name": "Audio Stem Separator",
+  "description": "Full-stack audio stemming app using Demucs (vocals, bass, drums, melody + drum sub-stems). FastAPI backend + React frontend + optional Firebase Storage.",
+  "icon": "https://firebase.google.com/downloads/brand-guidelines/PNG/logo-logomark.png",
+  "parameters": {
+    "projectName": {
+      "type": "string",
+      "description": "Firebase project name",
+      "default": "audio-stemmer"
+    },
+    "enableFirebaseStorage": {
+      "type": "boolean",
+      "description": "Enable Firebase Storage for stem uploads",
+      "default": false
+    }
+  },
+  "initialFiles": {
+    "backend/main.py": { "path": "backend/main.py" },
+    "backend/requirements.txt": { "path": "backend/requirements.txt" },
+    "backend/start.sh": { "path": "backend/start.sh" },
+    "frontend/src/main.js": { "path": "frontend/src/main.js" },
+    "frontend/src/api.js": { "path": "frontend/src/api.js" },
+    "frontend/src/firebase.js": { "path": "frontend/src/firebase.js" },
+    "frontend/src/ui/App.jsx": { "path": "frontend/src/ui/App.jsx" },
+    "frontend/src/ui/StemPlayer.jsx": { "path": "frontend/src/ui/StemPlayer.jsx" },
+    "frontend/src/ui/styles.css": { "path": "frontend/src/ui/styles.css" },
+    "frontend/index.html": { "path": "frontend/index.html" },
+    "frontend/package.json": { "path": "frontend/package.json" },
+    "frontend/vite.config.js": { "path": "frontend/vite.config.js" }
+  }
+}
